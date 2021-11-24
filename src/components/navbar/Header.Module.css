@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  padding-bottom: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 77px;
+  padding-top: 0px;
+  background-color: #2cccff;
+  color: white;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+}
+
+.category,
+.signup {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.signup {
+  border: 1px solid white;
+  /* background-color: aliceblue;
+  color: #00828c; */
+  border-radius: 5px;
+}
+
+.cart,
+.cart-mobile,
+.search,
+.search-mobile {
+  display: none;
+}
+
+.mobileIcon {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    margin-bottom: 10px;
+    top: -5px;
+    left: 5px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navLinksMobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #2cccff;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .category,
+  .signup {
+    color: white;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .signup {
+    border: none;
+    background-color: none;
+    border-radius: none;
+  }
+
+  .mobileIcon {
+    display: block;
+    position: absolute;
+    font-size: 29px;
+    color: white;
+    background-color: #2cccff;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+  }
+  .cart-mobile {
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 26px;
+    right: 72px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .cart-mobile:hover {
+    color: white;
+  }
+  .search-mobile {
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 26px;
+    right: 112px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  .search-mobile:hover {
+    color: white;
+  }
+  .ca {
+    display: none;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 1280px) {
+  .logo {
+    padding-bottom: 20px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    padding-bottom: 10px;
+    background-color: #2cccff;
+    color: white;
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 85%;
+  }
+
+  .category,
+  .signup {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px 15px;
+    margin: 5px 10px;
+    cursor: pointer;
+  }
+  ul {
+    padding-left: 1 rem;
+  }
+
+  .signup {
+    border: 1px solid white;
+    /* background-color: aliceblue;
+  color: #00828c; */
+    border-radius: 5px;
+    /* padding-bottom: 0; */
+  }
+
+  .mobileIcon {
+    display: none;
+  }
+}
